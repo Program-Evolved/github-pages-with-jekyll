@@ -3,7 +3,7 @@ layout: post
 title: "GrandFantasia Fortification Calculator"
 date: 2021-09-16
 ---
-<!DOCTYPE html>
+
 <html lang="en">
   <style>
     table, th, TD,TR {
@@ -19,7 +19,7 @@ date: 2021-09-16
 
       </div>
 
-</body>
+
 <script>
   function forticalc(){
     var attk=parseInt(document.getElementById('attk').value)
@@ -29,6 +29,7 @@ date: 2021-09-16
        var fortitime=1
       var table =document.createElement("table")
       res=document.getElementById('fortitable')
+	  res.innerHTML=""
       res.appendChild(table)
        for(x=0;x<rates.length;x++)
       {
@@ -49,4 +50,3 @@ date: 2021-09-16
   }
 </script>
 
-</html>
