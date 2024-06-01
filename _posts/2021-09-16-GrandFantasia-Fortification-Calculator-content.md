@@ -38,7 +38,7 @@ date: 2021-09-16
         TD1=document.createElement('TD')
         fortnbr1=document.createTextNode('+ '+fortitime.toString()+'= ')
         TR.appendChild(TD1.appendChild(fortnbr1))
-        fortnbr2=document.createTextNode(rates[x]*(attk/100))
+        fortnbr2=document.createTextNode((rates[x]*0.01)*attk)
         TD2=document.createElement('TD')
         TR.appendChild(TD2.appendChild(fortnbr2))
         table.appendChild(TR)
